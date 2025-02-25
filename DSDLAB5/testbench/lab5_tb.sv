@@ -12,12 +12,12 @@ module lab5_tb();
     integer selector_errors = 0;
     
     // Instantiate both modules separately for clear testing
-    bhv_nums seven_seg_dut (
+    beh_nums seven_seg_dut (
         .nums(nums),
         .a(a), .b(b), .c(c), .d(d), .e(e), .f(f), .g(g)
     );
     
-    bhv_sel selector_dut (
+    beh_sel selector_dut (
         .sel(sel),
         .AN0(AN0), .AN1(AN1), .AN2(AN2), .AN3(AN3),
         .AN4(AN4), .AN5(AN5), .AN6(AN6), .AN7(AN7)
